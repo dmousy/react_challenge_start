@@ -15,9 +15,11 @@ export const AppointmentsPage = ({
   */
  
   const [title, setTitle] = useState('');
-  const [contact, setContact] = useState(contacts.lenght > 0 ? contacts[0].name : '');
+  const [contact, setContact] = useState( contacts.length > 0 ? contacts[0].name : '');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
+
+
 
 
   const handleSubmit = (e) => {
@@ -49,7 +51,6 @@ export const AppointmentsPage = ({
       <hr />
       <section>
         <h2>Appointments</h2>
-        <h1>Algo</h1>
         <TileList tiles={appointments} />
       </section>
     </div>
